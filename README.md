@@ -22,3 +22,18 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+```ruby
+$ gem install rails
+ERROR:  Loading command: install (LoadError)
+    cannot load such file -- openssl
+ERROR:  While executing gem ... (NoMethodError)
+    undefined method `invoke_with_build_args' for nil:NilClass
+
+
+
+  rvm pkg install openssl
+
+
+  rvm reinstall ruby-2.3.1  --with-openssl-dir=$rvm_path/usr
+```
